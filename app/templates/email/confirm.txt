@@ -1,0 +1,14 @@
+
+Dear {{ user. username }},
+
+Welcome to FunzaFunzi!
+
+To confirm your account please click on the following link:
+
+{{ url_for('auth.confirm', token=token, _external=True) )}}
+
+Regards,
+
+The FunzaFunzi Team.
+
+Note: replies to this email are not monitored.

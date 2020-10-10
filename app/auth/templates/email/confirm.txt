@@ -1,0 +1,14 @@
+
+<h1>Dear {{ user. username }},</h1>
+
+<h2>Welcome to FunzaFunzi!</h2>
+
+<p>To confirm your account please click on the following link:</p>
+
+<p>{{ url_for('auth.confirm', token=token, _external=True) )}}</p>
+
+<p>Regards,</p>
+
+<p>The FunzaFunzi Team.</p>
+
+<h4>Note: replies to this email are not monitored.</h4>
